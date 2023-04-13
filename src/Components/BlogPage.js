@@ -7,7 +7,7 @@ function BlogPage() {
 
     const {blogpage,id,numberofblogs} = useFetch();
     const description = `${blogpage.body}`;
-    const coverimage = "https://api-pranavdhar.herokuapp.com/media/"+blogpage.coverImage;
+    const coverimage = ""+blogpage.coverImage;
 
     const history = useHistory();
     const prevPost = () => {
